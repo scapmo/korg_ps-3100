@@ -36,15 +36,17 @@ header h1 {
 	font-weight: bold;
 	font-size: 2em;  */
 	font: bold 1.5em/1.5em Impact,sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 header h2 {
 	font: bold italic 1em/1em 'Arial Bold Italic',Helvetica,sans-serif italic;
+	-webkit-font-smoothing: antialiased;
 }
 
 .top {
 	border-bottom: 2px solid black;
-	height: 115px;
+	height: 115px; 
 }
 
 .logo {
@@ -97,7 +99,21 @@ header h2 {
 
 /* ////// BODY ////// */
 
-.main_image {
-	margin: 0 60px 0 0;	
+.main_image img {
+	width: 100%;
+}
+
+/* ////// FOOTER ///// */
+
+footer {
+	width: 100%; 
+	height: 40px;
+	background-color: rgba(124,160,199,.2);
+	font: .6em/1em 'Arial Bold', sans-serif;
+	color: rgba(61,58,72,1);
+	font-weight: bold;
+	text-align: right;
+	padding: 15px;
+
 
 }
