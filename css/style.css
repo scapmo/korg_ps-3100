@@ -137,9 +137,10 @@ header h2 {
 footer {
 	width: auto%; 
 	height: 40px;
-	background-color: rgba(124,160,199,.2);
+	background-color: rgba(124,160,199,.5);
 	font: .6em/1em 'Arial Bold', sans-serif;
-	color: rgba(61,58,72,1);
+	color: #fff;
+	/*color: rgba(61,58,72,1);*/
 	font-weight: bold;
 	text-align: right;
 	padding: 15px;
