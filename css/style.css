@@ -71,9 +71,10 @@ header h2 {
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
+	-webkit-font-smoothing: antialiased;
 
 	width: 100%;
-	height: 25px;
+	height: 30px;
 	float: left;
 	clear: both;
 	border-top: 20px;
@@ -97,6 +98,8 @@ header h2 {
 	float: left;
 	background-color: rgba(63,63,63,1);
 	border: 2px solid #fff;
+	border-radius: 7px;
+
 }
 
 #current  {
@@ -146,10 +149,11 @@ footer {
 	background-color: rgba(124,160,199,.5);
 	font: .6em/1em 'Arial Bold', sans-serif;
 	color: #fff;
-	/*color: rgba(61,58,72,1);*/
 	font-weight: bold;
 	text-align: right;
 	padding: 15px;
+	-webkit-font-smoothing: antialiased;
+	border-radius: 5px;
 
 
 }
