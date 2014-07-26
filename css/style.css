@@ -79,26 +79,32 @@ header h2 {
 	border-top: 20px;
 }
 
-#pages a:link, #pages a:visited {
+.pages a:link, .pages a:visited {
 	color: #fff;
 	text-decoration: none;
 }
 
-#pages a:hover {
-	color: rgba(36,128,255,1);
+.pages a:hover {
+	color: rgba(24,121,253,1);
 	/*text-decoration: underline;*/
 }
-#pages a:active {
+.pages a:active {
 	color: red;
 	text-decoration: none;
 }
-#pages a {
+.pages a {
 	width: 16.667%;
 	float: left;
 	background-color: rgba(63,63,63,1);
 	border: 2px solid #fff;
 }
 
+#current  {
+	width: 16.667%;
+	float: left;
+	background-color: rgba(24,121,253,1);
+	border: 2px solid #fff;
+}
 /* ////// BODY ////// */
 
 .main_image img {
