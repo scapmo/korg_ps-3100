@@ -73,7 +73,7 @@ body {
 	width: 16.667%;
 	float: left;
 	padding-bottom: 5px;
-	background-color: rgba(63,63,63,1);
+	background-color: rgba(63,63,90,1);
 	height: 2.3em;
 	border: 2px solid #fff;
 	border-radius: 7px;
@@ -99,6 +99,7 @@ body {
 }
 
 .nav a:hover {
+	background-color: rgba(175,195,220,1);
 	color: rgba(24,121,253,1);
 }
 
@@ -108,7 +109,7 @@ body {
 	font-size: .8em;
 	text-align: center;
 	background-color: rgba(175,195,220,1);
-	height: 2.1em;
+	height: 2.3em;
 	border: 1px solid rgba(175,195,221,1);
 	border-radius: 7px;
 
