@@ -81,6 +81,8 @@ body {
 	height: 2.3em;
 	border: 2px solid #fff;
 	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
 	font: .75em/2em 'Arial Bold', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
