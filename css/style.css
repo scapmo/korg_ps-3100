@@ -4,158 +4,180 @@
 	font-family: 'Impact';
 	src: url('../fonts/Impact');
 	font-family: 'Arial';
-	src: url(../fonts/Arial);
+	src: url('../fonts/Arial');
 	/*font-family 'astronaut';
 	src: url(../fonts/astronaut/ASTRII__.TTF);*/
 }
 
 
-/* ////// GLOBAL STYLES ////// */
-
-* {	
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 
 body {
-	background: rgba(246,246,246,1);
-	width: 900px;
 	margin: 0 auto;
+	width: 980px;
+	height: 100%;
+	background: rgba(246,246,246,1);
 }
 
-.wrapper {
+#wrapper {
 	background: white;
+	position: relative;
 	padding: 0 45px 45px;
-	overflow: auto;
+	min-height: 700px;
 }
 
-header h1 {
-	font: bold 1.5em/1.5em Impact,sans-serif;
-	-webkit-font-smoothing: antialiased;
-}
+/* ////// HEADER ////// */ 
 
-header h2 {
-	font: bold italic 1em/1em 'Arial Bold Italic',Helvetica,sans-serif italic;
-	-webkit-font-smoothing: antialiased;
-}
-
-.top {
+#header {
+	display: block;
+	padding-top: 5px;
+	height: 118px; 
 	border-bottom: 2px solid black;
-	height: 115px; 
 }
 
-.logo {
+#logo {
 	float: left;
 	width: 120px;
-	height: 130px;
+	height: 120px;
 }
 
 .title {
 	float: left;
-	width: 80%;
+	width: 86.5%;
 	height: 120px;
 }
 
-.contact {
-
-
-
+.title h1 {
+	font: bold 1.5em/1.5em Impact,sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
+
+.title h2 {
+	font: bold italic 1em/1em Arial,Helvetica,'sans-serif bold italic';
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
 /* ////// NAV ////// */
 
 
 .nav {
+	width: 100%;
+	height: 2em;
+	display: block;
+	clear: both;
+}
+
+.nav a {
+	width: 16.667%;
+	float: left;
+	padding-bottom: 5px;
+	background-color: rgba(63,63,63,1);
+	height: 2.3em;
+	border: 2px solid #fff;
+	border-radius: 7px;
 	font: .75em/2em 'Arial Bold', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
-
-	width: 100%;
-	height: 30px;
-	float: left;
-	clear: both;
-	border-top: 20px;
 }
 
-.pages a:link, .pages a:visited {
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both; 
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+.nav a:link, .nav a:visited {
 	color: #fff;
 	text-decoration: none;
 }
 
-.pages a:hover {
+.nav a:hover {
 	color: rgba(24,121,253,1);
-	/*text-decoration: underline;*/
 }
-.pages a:active {
-	color: red;
+
+.nav a:active {
+	color: white;
 	text-decoration: none;
-}
-.pages a {
-	width: 16.667%;
-	float: left;
-	background-color: rgba(63,63,63,1);
-	border: 2px solid #fff;
+	font-size: .8em;
+	text-align: center;
+	background-color: rgba(175,195,220,1);
+	height: 2.1em;
+	border: 1px solid rgba(175,195,221,1);
 	border-radius: 7px;
 
 }
 
 #current  {
-	width: 16.667%;
-	float: left;
 	background-color: rgba(24,121,253,1);
-	border: 2px solid #fff;
 }
+
+
 /* ////// BODY ////// */
 
-.main_image img {
+.content {
 	width: 100%;
+}
+
+#hero_pic img {
+	width: 100%;
+	display: block;
+	padding-bottom: 2em;
 }
 
 .modules img {
 	width: 12.5%;
 	float: left;
-	padding-top: 20px;
+	padding: 20px 10px 0 10px;
 	border: 2px solid #fff;
+	display: inline-block;
 }
 
-.modules p {
+/*.modules p {
 	clear: left;
 	font: .6em/1em 'Arial Bold', sans-serif;
 	text-align: center;
-}
+}*/
 
 
-.columns  {
-	column-count: 3;
-	column-gap: 4px;
-	column-rule: 1px solid black;
-}
-
-.col-right {
-	width: 32%;
-	float: left;
-}
 
 /* ////// FOOTER ///// */
 
-footer {
-	width: auto%; 
+.footer {
+	width: 890px; 
 	height: 40px;
 	background-color: rgba(124,160,199,.5);
-	font: .6em/1em 'Arial Bold', sans-serif;
+	font: bold .7em/1em 'Arial Bold', sans-serif;
 	color: #fff;
-	font-weight: bold;
 	text-align: right;
 	-webkit-font-smoothing: antialiased;
 	padding: 15px;
 	border-radius: 7px;
-
-
+	display: block;
+	clear: both;
+	position: absolute;
+	bottom: 0px;
 }
 
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: rgba(24,121,253,1);
+}
+
+.footer a:active {
+	color: red;
+	text-decoration: none;
+}
 /* TEST */
 
 .black_overlay{
@@ -189,3 +211,12 @@ footer {
 .modules .lightbox {
 	width: 100%;
 }
+
+/* ////// GLOBAL STYLES ////// */
+
+* {	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
