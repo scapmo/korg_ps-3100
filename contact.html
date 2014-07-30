@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>KORG PS-3100 MODULAR POLYPHONIC SYNTHESIZER • CONTACT</title>
+	<title>KORG PS-3100 MODULAR POLYPHONIC SYNTHESIZER • HOME</title>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
+	<div class="wrapper">
+		<div class="header">
 			<div id="logo">
 				<img src="images/korg_logo_red.jpg" alt="Korg logo" width="100" height="102">
 			</div>
@@ -20,7 +20,7 @@
 			</div>
 		</div> <!--close header-->
 	
-		<div class="nav">
+		<div class="nav clearfix">
 			<a href="index.html">HOME</a>
 			<a href="history.html">HISTORY</a>
 			<a href="modules.html">MODULES</a>
@@ -30,10 +30,33 @@
 		</div> <!--close nav-->
 		
 
+		<div class="container"> 
+			<div id="contact">
+				<h2>Have a question or comment? </h2>
+				<img src="images/korg_ps3100_patched_crop.jpg" alt="">
+				<h3>Let's Connect!</h3>
+			</div>
+				<!-- Contact Form -->
+	        <div class="form">
+	        	<form action="#" method="post">
+		          	<label for="fullname">Name</label>
+		          	<input type="text" id="fullname" name="fullname" placeholder="your name" required>
+		          	<label for="email">Email</label>
+		          	<input type="email" id="email" name="email" placeholder="your email" required>
+		         	<label for="phone">Phone</label>
+		          	<input type="tel" id="phone" name="phone" placeholder="your phone (optional)">
+		          	<label for="message">Message</label>
+		         	<textarea id="message" name="message" rows="10"></textarea>
+		          	<input type="submit" value="send">
+	        	</form>
+			</div>
+		</div>
 
-		<div class="footer">
+		<div class="wrapper-footer"></div>
+		<div id="footer">
 			<a href="contact.html">© christopher scapelliti</a> • This site is not affiliated with Korg USA.
 		</div>
+	</div>
 
 	</div> <!-- end wrapper -->
 

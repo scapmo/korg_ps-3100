@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>KORG PS-3100 MODULAR POLYPHONIC SYNTHESIZER • MEDIA</title>
+	<title>KORG PS-3100 MODULAR POLYPHONIC SYNTHESIZER • HOME</title>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
+	<div class="wrapper">
+		<div class="header">
 			<div id="logo">
 				<img src="images/korg_logo_red.jpg" alt="Korg logo" width="100" height="102">
 			</div>
@@ -20,7 +20,7 @@
 			</div>
 		</div> <!--close header-->
 	
-		<div class="nav">
+		<div class="nav clearfix">
 			<a href="index.html">HOME</a>
 			<a href="history.html">HISTORY</a>
 			<a href="modules.html" id="current">MODULES</a>
@@ -28,34 +28,19 @@
 			<a href="resources.html">RESOURCES</a>
 			<a href="contact.html">CONTACT</a>
 		</div> <!--close nav-->
+		
 
-		<div class="modules clearfix">
-			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/waveform_knob_rc.jpg" alt=""></a>
-			<div id="light" class="white_content"> <img src="images/korg_ps3133_ad.jpg" class="lightbox"> <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
-	        <div id="fade" class="black_overlay"></div>
-
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<a href="#waveform"><img src="images/waveform_knob_rc.jpg" id="waveform" alt=""></a>
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
-			<img src="images/waveform_knob_rc.jpg" alt="">
+		<div class="container"> 
+			<div id="hero_pic">
+				<img src="images/korg_ps3100_front.jpg" alt="korg ps3100 front">
+			</div>
 		</div>
 
-
-	
-		<div class="footer">
+		<div class="wrapper-footer"></div>
+		<div id="footer">
 			<a href="contact.html">© christopher scapelliti</a> • This site is not affiliated with Korg USA.
 		</div>
+	</div>
 
 	</div> <!-- end wrapper -->
 
