@@ -192,9 +192,10 @@ h3 {
 
 
 .nav a:link, .nav a:visited {
-	color: #fff;
+	color: #eee;
 	text-decoration: none;
 }
+
 
 .nav a:hover {
 	background-color: rgba(175,195,220,1);
@@ -214,6 +215,8 @@ h3 {
 
 #current  {
 	background-color: rgba(24,121,253,1);
+	color: #fff;
+
 }
 
 
