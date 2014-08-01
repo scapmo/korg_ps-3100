@@ -155,8 +155,9 @@ h3 {
 .nav-wrapper {
 	width: 100%;
 	margin: 0 auto;
-/*	background-color: rgba(65,61,77,.4);
-*//*	background-color: rgba(184,196,202,.3);
+/*	OLD CODE
+	background-color: rgba(65,61,77,.4);
+	background-color: rgba(184,196,202,.3);
 */	box-shadow: 1px 8px 10px #bbb;
 	border: 2px solid white;
 	border-radius: 5px;
@@ -179,18 +180,82 @@ h3 {
 	margin-left: 5px;
 }
 
+/* ////// LINK ////// */
+
 .nav #home a {
 	display: block;
 	width: 142px;
-	height: 2.5em;
+	height: 1.9em;
 	overflow: hidden;
 	white-space: nowrap;
 	text-indent: 100%;
 	background: url(../images/sprites.png) no-repeat;
 	background-size: 735%;
 	background-position: 0 -12px;
+}
 
-/*	width: 142px;
+.nav #history a {
+	display: block;
+	width: 142px;
+	height: 1.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 735%;
+	background-position: -144px -12px;
+}
+
+.nav #modules a {
+	display: block;
+	width: 142px;
+	height: 1.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 735%;
+	background-position: -288px -12px;
+}
+
+.nav #media a {
+	display: block;
+	width: 142px;
+	height: 1.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 735%;
+	background-position: -432px -12px;
+}
+
+.nav #resources a {
+	display: block;
+	width: 142px;
+	height: 1.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 735%;
+	background-position: -576px -12px;
+}
+
+.nav #contact a {
+	display: block;
+	width: 142px;
+	height: 1.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 735%;
+	background-position: -720px -12px;
+}
+
+/*	OLD CODE (PRE SPRITES)
+	width: 142px;
 	float: left;
 	margin-left: 5px;
 	padding-bottom: 5px;
@@ -205,81 +270,24 @@ h3 {
 	text-decoration: none;
 	text-align: center;
 	-webkit-font-smoothing: antialiased;
-*/}
+*/
 
-.nav #history a {
-	display: block;
-	width: 142px;
-	height: 2.5em;
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	background: url(../images/sprites.png) no-repeat;
-	background-size: 735%;
-	background-position: -144px -12px;
-}
 
-.nav #modules a {
-	display: block;
-	width: 142px;
-	height: 2.5em;
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	background: url(../images/sprites.png) no-repeat;
-	background-size: 735%;
-	background-position: -288px -12px;
-}
+/* ////// NAV LINK & VISITED ////// */
 
-.nav #media a {
-	display: block;
-	width: 142px;
-	height: 2.5em;
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	background: url(../images/sprites.png) no-repeat;
-	background-size: 735%;
-	background-position: -432px -12px;
-}
-
-.nav #resources a {
-	display: block;
-	width: 142px;
-	height: 2.5em;
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	background: url(../images/sprites.png) no-repeat;
-	background-size: 735%;
-	background-position: -576px -12px;
-}
-
-.nav #contact a {
-	display: block;
-	width: 142px;
-	height: 2.5em;
-	overflow: hidden;
-	white-space: nowrap;
-	text-indent: 100%;
-	background: url(../images/sprites.png) no-repeat;
-	background-size: 735%;
-	background-position: -720px -12px;
-}
-
-/*.nav a:link, .nav a:visited {
+/*.OLD CODE (PRE SPRITES) 
+	nav a:link, .nav a:visited {
 	color: #eee;
 	text-decoration: none;
-}
+} */
 
 
 /* ////// NAV HOVER ////// */
 
 .nav #home a:hover {
 	background-position: 0px -60px;
-/*	background-color: rgba(175,195,220,1);
+	background-color: rgba(175,195,220,1);
 	color: rgba(81,31,29,1);
-*/
 }
 
 .nav #history a:hover {
@@ -302,12 +310,8 @@ h3 {
 	background-position: -720px -60px;
 }
 
-
-/* ////// NAV ACTIVE //////*/
-
-.nav #home a:active {
-	background-position: 0px -108px;
-/*	color: white;
+/*	OLD CODE (PRE SPRITES)
+	color: white;
 	text-decoration: none;
 	font-size: .75em;
 	text-align: center;
@@ -315,7 +319,13 @@ h3 {
 	height: 2.6em;
 	border: 3px solid rgba(210,218,223,1);
 	border-radius: 7px;
-*/}
+*/
+
+/* ////// NAV ACTIVE //////*/
+
+.nav #home a:active {
+	background-position: 0px -108px;
+}
 
 .nav #history a:active {
 	background-position: -144px -108px;
@@ -337,17 +347,22 @@ h3 {
 	background-position: -720px -108px;
 }
 
-
+/*	OLD CODE (PRE SPRITES)
+	color: white;
+	text-decoration: none;
+	font-size: .75em;
+	text-align: center;
+	background-color: rgba(175,195,220,1);
+	height: 2.6em;
+	border: 3px solid rgba(210,218,223,1);
+	border-radius: 7px;
+*/
 
 
 /* ////// NAV CURRENT ////// */
 
 .nav #home #current a {
 	background-position: 0px -157px;
-
-/*	background-color: rgba(24,121,253,1);
-	color: #fff;
-*/
 }
 
 .nav #history #current a {
@@ -369,6 +384,13 @@ h3 {
 .nav #contact #current a {
 	background-position: -720px -157px;
 }
+
+
+/*	OLD CODE (PRE SPRITES)
+	background-color: rgba(24,121,253,1);
+	color: #fff;
+*/
+
 
 
 /* ////// BODY ////// */
@@ -454,7 +476,7 @@ h3 {
 	max-width: 921px;
 	min-width: 752px;
 	height: 40px;
-	background-color: rgba(198,208,219,1);
+	background-color: rgba(156,184,212,1);
 	/*background-color: rgba(124,160,199,.5);
 	*/
 	font: bold .7em/1em 'Arial Bold', sans-serif;
